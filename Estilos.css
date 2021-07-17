@@ -1,0 +1,209 @@
+/* DEFINICION DE ESTILOS PARA MINISISTEMA PERSONAS FICHEROS */
+
+
+div#head {
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   border-bottom-color: #0B4F70;  
+}
+div#head h1 {
+   font-family: arial;
+   font-size: 24px;
+   color: #097FBA;
+   letter-spacing: 2px;
+   display: inline;    
+}
+div#menu {
+    margin-top: 20px;
+}
+a {
+ padding: 5px;   
+}
+
+a:link {
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #153852;
+    margin-right: 10px;
+}
+a:visited {
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #3b6e51;
+    margin-right: 10px;
+}
+a:hover {
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    color: orange;
+    margin-right: 10px;
+    background-color: black;
+}
+
+  body{
+
+  background-size: cover;
+}
+h1{
+  text-align: center;
+}
+
+h4{
+  text-align: left;
+}
+
+div#contenido {
+   width: 80%; 
+   margin: 40px auto;
+  
+}
+
+
+fieldset#dsc {
+   font-family: calibri;
+   font-size: 14px;
+   font-style: italic;
+   text-align: justify;
+   padding: 20px;
+   border: 2px solid green;
+  border-radius: 25px; 
+
+   
+}
+fieldset#frm {
+   width: 280px;
+   font-family: arial;
+   font-size: 12px;
+   font-style: normal;
+   text-align: right;
+   padding: 20px; 
+   border: 2px solid green;
+  border-radius: 25px;
+
+}
+legend {
+    font-family: arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+table#lst {
+    width: 90%;
+    font-style: normal;
+}
+table#lst th {
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+table#lst td {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #3D9DCD;
+    text-align: center;
+}
+.txtERR {
+    font-weight: bold;
+    color: #DC0A0A;
+    letter-spacing: 3px;
+}
+.txtMSG {   
+    font-weight: bold;
+    color: #085276;
+    letter-spacing: 3px;    
+}
+img.btn {
+    width: 10px;
+    height:10px;
+    cursor: pointer;
+}
+a.reg {
+    color: green;
+    text-decoration: none;
+    background-color: transparent; 
+}
+
+
+/* Estilo de la imagen utilizada para activar el modal*/
+#myImg{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover{opacity: 0.7;}
+/* El fondo del Modal*/
+.modal{
+  display:none;/*oculto por defecto*/
+  position: fixed;/*Permanecer en el lugar*/
+  z-index: 1000000;
+  padding-top:100px;/*Ubicacion de la caja*/
+  left: 0;
+  top: 0;
+  width:100%;/*Ancho completo*/
+  height: 100%;/*Altura completa*/
+  overflow: auto;/*Habilitar desplazamiento si es necesario*/
+  background-color:rgb(0,0,0);/*Color de reserva*/
+  background-color:rgba(0,0,0,0.9);/*Negro con opacidad*/
+}
+/*Contenido del Modal(Imagen)*/
+.modal-content{
+  margin:auto;
+  display:block;
+  width:80%;
+  max-width: 700px;
+}
+
+
+.gallery-img {
+  margin:auto;
+  display:block;
+  width:80%;
+  max-width: 700px;
+}
+/**/
+
+.modal-open{
+  margin:auto;
+  display:block;
+  width:80%;
+  max-width: 700px;
+}
+
+
+
+/*Implemntar animacion- Zoom en el modal*/
+.modal-content,#caption{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+.img{
+    margin: 0 auto;
+
+}
+/*Zoom de fotogramas clave*/
+@keyframes zoom {
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+/*100% de ancho de imagen en pantallas mas chicas*/
+@media only screen and (max-width: 700px){
+  .modal-content{
+    width:100%;
+  }
+}
